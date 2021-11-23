@@ -15,14 +15,28 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Title:</strong>
-                {{ $post->title }}
+                <strong>Gewicht:</strong>
+                {{ $post->gewicht }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Description:</strong>
-                {{ $post->description }}
+                <strong>Geschlecht:</strong>
+                {{ $post->geschlecht }}
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Alter:</strong>
+                {{ $post->alter }}
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Größe:</strong>
+                {{ $post->groesse }}
             </div>
         </div>
     </div>

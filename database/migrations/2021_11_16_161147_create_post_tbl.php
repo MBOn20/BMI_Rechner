@@ -14,8 +14,10 @@ class CreatePostTbl extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('description');
+            $table->string('gewicht');
+            $table->string('geschlecht');
+            $table->string('alter');
+            $table->string('grosse');
             $table->timestamps();
         });
     }

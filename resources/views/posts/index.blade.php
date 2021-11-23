@@ -4,10 +4,10 @@
     <div class="row" style="margin-top: 5rem;">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Laravel 8 CRUD Example from scratch - laravelcode.com</h2>
+                <h2>Deine Werte Übersicht</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('posts.create') }}"> Create New Post</a>
+                <a class="btn btn-success" href="{{ route('posts.create') }}"> Erstelle einen neuen Eintrag</a>
             </div>
         </div>
     </div>
@@ -20,16 +20,19 @@
    
     <table class="table table-bordered">
         <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Details</th>
-            <th width="280px">Action</th>
+            <th>Eintragsnummer</th>
+            <th>Gewicht</th>
+            <th>Geschlecht</th>
+            <th>Alter</th>
+            <th>Größe</th>
         </tr>
         @foreach ($data as $key => $value)
         <tr>
             <td>{{ ++$i }}</td>
-            <td>{{ $value->title }}</td>
-            <td>{{ \Str::limit($value->description, 100) }}</td>
+            <td>{{ $value->gewicht }}</td>
+            <td>{{ $value->geschlecht }}</td>
+            <td>{{ $value->alter }}</td>
+            <td>{{ $value->groesse }}</td>
             <td>
                 <form action="{{ route('posts.destroy',$value->id) }}" method="POST">   
                     <a class="btn btn-info" href="{{ route('posts.show',$value->id) }}">Show</a>    

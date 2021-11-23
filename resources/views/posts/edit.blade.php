@@ -30,14 +30,26 @@
          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Title:</strong>
-                    <input type="text" name="title" value="{{ $post->title }}" class="form-control" placeholder="Title">
+                    <strong>Gewicht:</strong>
+                    <input type="text" name="gewicht" value="{{ $post->gewicht }}" class="form-control" placeholder="Gewicht">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Description:</strong>
-                    <textarea class="form-control" style="height:150px" name="description" placeholder="Detail">{{ $post->description }}</textarea>
+                    <strong>Geschlecht:</strong>
+                    <input type="text" name="geschlecht" value="{{ $post->geschlecht }}" class="form-control" placeholder="Geschlecht">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Alter:</strong>
+                    <input type="text" name="alter" value="{{ $post->alter }}" class="form-control" placeholder="Alter">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Größe:</strong>
+                    <input type="text" name="groesse" value="{{ $post->groesse }}" class="form-control" placeholder="Größe">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

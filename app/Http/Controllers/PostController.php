@@ -39,8 +39,10 @@ class PostController extends Controller
     public function store(Request $request)
     {
          $request->validate([
-            'title' => 'required',
-            'description' => 'required',
+            'gewicht' => 'required',
+            'geschlecht' => 'required',
+            'alter' => 'required',
+            'groesse' => 'required',
         ]);
     
         Post::create($request->all());
@@ -81,8 +83,10 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
         $request->validate([
-            'title' => 'required',
-            'description' => 'required',
+            'gewicht' => 'required',
+            'geschlecht' => 'required',
+            'alter' => 'required',
+            'groesse' => 'required',
         ]);
     
         $post->update($request->all());

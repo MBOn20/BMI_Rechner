@@ -29,14 +29,26 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Title:</strong>
-                <input type="text" name="title" class="form-control" placeholder="Enter Title">
+                <strong>Gewicht:</strong>
+                <input type="text" name="gewicht" class="form-control" placeholder="00,00">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Description:</strong>
-                <textarea class="form-control" style="height:150px" name="description" placeholder="Enter Description"></textarea>
+                <strong>Geschlecht:</strong>
+                <input type="text" name="geschlecht" class="form-control" placeholder="M/W">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Alter:</strong>
+                <input type="text" name="alter" class="form-control" placeholder="In ganzen Zahlen">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Größe:</strong>
+                <input type="text" name="groesse" class="form-control" placeholder="0,00m">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
