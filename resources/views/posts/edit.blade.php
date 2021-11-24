@@ -27,33 +27,34 @@
         @csrf
         @method('PUT')
    
-         <div class="row">
+            Eintrag bearbeiten
+            <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Gewicht:</strong>
-                    <input type="text" name="gewicht" value="{{ $post->gewicht }}" class="form-control" placeholder="Gewicht">
+                    <strong>Lebensmittel:</strong>
+                    <input type="text" name="lebensmittel" value="{{ $post->lebensmittel }}" class="form-control" placeholder="Trage den Namen ein">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Geschlecht:</strong>
-                    <input type="text" name="geschlecht" value="{{ $post->geschlecht }}" class="form-control" placeholder="Geschlecht">
+                    <strong>Kalorien:</strong>
+                    <input type="text" name="kcals" value="{{ $post->kcals }}" class="form-control" placeholder="kcals">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Alter:</strong>
-                    <input type="text" name="alter" value="{{ $post->alter }}" class="form-control" placeholder="Alter">
+                    <strong>Gut für:</strong>
+                    <input type="text" name="gutfuer"value="{{ $post->gutfuer }}" class="form-control" placeholder="Wo für ist das Lebensmittel gut?">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Größe:</strong>
-                    <input type="text" name="groesse" value="{{ $post->groesse }}" class="form-control" placeholder="Größe">
+                    <strong>Anmerkung:</strong>
+                    <input type="text" name="anmerkung" value="{{ $post->anmerkung }}" class="form-control" placeholder="Sonstige Anmerkungen">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-              <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Hinzufügen</button>
             </div>
         </div>
    

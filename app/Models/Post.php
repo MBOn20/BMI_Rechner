@@ -9,6 +9,6 @@ class Post extends Model
     use HasFactory;
 
     protected $fillable = [
-        'gewicht', 'geschlecht', 'alter', 'groesse'
+        'lebensmittel', 'kcals', 'gutfuer', 'anmerkung'
     ];
 }

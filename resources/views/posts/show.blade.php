@@ -15,28 +15,28 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Gewicht:</strong>
-                {{ $post->gewicht }}
+                <strong>Lebensmittel:</strong>
+                {{ $post->lebensmittel }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Geschlecht:</strong>
-                {{ $post->geschlecht }}
-            </div>
-        </div>
-        <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Alter:</strong>
-                {{ $post->alter }}
+                <strong>Kalorien:</strong>
+                {{ $post->kcals }}
             </div>
         </div>
         <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Größe:</strong>
-                {{ $post->groesse }}
+                <strong>Gut für:</strong>
+                {{ $post->gutfuer }}
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Anmerkungen:</strong>
+                {{ $post->anmerkung }}
             </div>
         </div>
     </div>
