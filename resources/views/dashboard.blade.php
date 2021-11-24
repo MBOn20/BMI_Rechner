@@ -1,3 +1,4 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -13,5 +14,28 @@
                 </div>
             </div>
         </div>
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <script>
+                        $(document).ready(function(){
+                        $("#hide").click(function(){
+                            $("p").hide();
+                        });
+                        $("#show").click(function(){
+                            $("p").show();
+                        });
+                        });
+                    </script>
+                </head>
+                    <body>
+
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+
+                        <button id="hide">Hide</button>
+                        <button id="show">Show</button>
+
+                    </body>
+            </html>
     </div>
 </x-app-layout>
