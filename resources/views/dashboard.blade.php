@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI-Rechner</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <x-app-layout>
     <x-slot name="header">
@@ -5,40 +12,50 @@
             {{ __('BMI-Rechner ') }}
         </h2>
     </x-slot>
-
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-                    Berechne deinen aktuellen BMI:
-                    <div class="container">
-                            <p>Größe (in cm)</p>
-                            <input type="text" id="height">
-                            <p>Gewicht (in kg)</p>
-                            <input type="text" id="weight">
-                            <button id="btn">Berechnen</button>
+                    <div class="jumbotron text-center">
+                    
+                            <p style="font-size: 30px; font-weight: bold; line-height: 36px; margin: 0 0 24px;">
+                            Berechne deinen aktuellen BMI:</p></br>
+                    
+                            <p style="font-size: 25px;">Größe:</p>
+                            <input type="text" id="height" placeholder="in cm"></br></br>
+                            <p style="font-size: 25px;">Gewicht:</p>
+                            <input type="text" id="weight" placeholder="in cm"></br>
+                            <button id="btn" type="button" class="btn btn-danger">Berechnen</button>
+                            </br>
+                            <div id="result"></div>
+                            </br></br>
                             
+                            <h1>Information:</h1>
+                            <div id="auswertung"></br>
+                                <div id="bewertung"></div></br>
+                                    <p>Der BMI ist keine eindeutige Kennzahl um eine qualifizierte Aussage über Über-, Unter- oder Normalgewicht treffen zu können. 
+                                        Bitte berücksichtigen Sie dies und lassen Sie Ihr Ergebnis von einem Arzt prüfen.</p>
+                                </div></br>
+                                <button id="hide">Ausblenden</button>
+                                <button id="show">Anzeigen</button>
                     </div>
-                    <div id="result"></div>
-                    <h1>Auswertung:</h1>
-                    <div id="auswertung">
-                        <div id="bewertung"></div>
-                            <p>Der BMI ist keine eindeutige Kennzahl um eine qualifizierte Aussage über Über-, Unter- oder Normalgewicht treffen zu können. 
-                                Bitte berücksichtigen Sie dies und lassen Sie Ihr Ergebnis von einem Arzt prüfen.</p>
-                    </div>
-                        <button id="hide">Ausblenden</button>
-                        <button id="show">Anzeigen</button>
                 </div>
             </div>
         </div>
-            <!DOCTYPE html>
-            <html>
-                <head>
                     <script>
                             $(document).ready(function(){
                                 $("#auswertung").hide();
+                                $("#hide").hide();  
+                            });
+                            $("#hide").click(function(){
+                                $("#auswertung").hide();
                                 $("#hide").hide();
-                                
+                                $("#show").show();
+                            });
+                            $("#show").click(function(){
+                                $("#auswertung").show();
+                                $("#show").hide();
+                                $("#hide").show();
                             });
                             
                             /*function buttoncheck(){
@@ -49,19 +66,6 @@
                                 $("#show").hide();
                                 i = 1;
                             }};*/
-
-                                    $("#hide").click(function(){
-                                        $("#auswertung").hide();
-                                        $("#hide").hide();
-                                        $("#show").show();
-                                        
-                                    });
-                                    $("#show").click(function(){
-                                        $("#auswertung").show();
-                                        $("#show").hide();
-                                        $("#hide").show();
-                                      
-                                    });
                     </script>
                     <script>
                                 window.onload = () => {
@@ -110,12 +114,8 @@
                                 }
                             }
                     </script>
-                </head>
-                <body> 
-                    
-                </body>
-            </html>
 </x-app-layout>
   
-
+</body>
+</html>
 

@@ -4,7 +4,7 @@
     <div class="row" style="margin-top: 5rem;">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h1>Hallo! Hier kannst du Lebensmittel die dir gefallen mit anderen zusammen sammeln!</h1>
+                <h1>Hallo! </br> Hier kannst du Lebensmittel die dir gefallen mit anderen zusammen sammeln!</h1>
             </div>
             <div class="pull-right">
                 <a class="btn btn-success" href="{{ route('posts.create') }}"> Erstelle einen neuen Eintrag</a>
