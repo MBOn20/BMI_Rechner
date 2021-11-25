@@ -17,8 +17,17 @@
                             <p>Gewicht (in kg)</p>
                             <input type="text" id="weight">
                             <button id="btn">Berechnen</button>
-                            <div id="result"></div>
+                            
                     </div>
+                    <div id="result"></div>
+                    <h1>Auswertung:</h1>
+                    <div id="auswertung">
+                        <div id="bewertung"></div>
+                            <p>Der BMI ist keine eindeutige Kennzahl um eine qualifizierte Aussage über Über-, Unter- oder Normalgewicht treffen zu können. 
+                                Bitte berücksichtigen Sie dies und lassen Sie Ihr Ergebnis von einem Arzt prüfen.</p>
+                    </div>
+                        <button id="hide">Ausblenden</button>
+                        <button id="show">Anzeigen</button>
                 </div>
             </div>
         </div>
@@ -27,13 +36,32 @@
                 <head>
                     <script>
                             $(document).ready(function(){
-                            $("#hide").click(function(){
                                 $("#auswertung").hide();
+                                $("#hide").hide();
+                                
                             });
-                            $("#show").click(function(){
-                                $("#auswertung").show();
-                            });
-                            });
+                            
+                            /*function buttoncheck(){
+                            if(i = 1){
+                                $("#hide").hide();
+                                
+                            } else(i = 2) {
+                                $("#show").hide();
+                                i = 1;
+                            }};*/
+
+                                    $("#hide").click(function(){
+                                        $("#auswertung").hide();
+                                        $("#hide").hide();
+                                        $("#show").show();
+                                        
+                                    });
+                                    $("#show").click(function(){
+                                        $("#auswertung").show();
+                                        $("#show").hide();
+                                        $("#hide").show();
+                                      
+                                    });
                     </script>
                     <script>
                                 window.onload = () => {
@@ -54,10 +82,10 @@
                             
                                 //Keine Eingabe
                                     if (height === "" || isNaN(height)) 
-                                        result.innerHTML = "Provide a valid Height!";
+                                        result.innerHTML = "Bitte geben Sie ein Wert für die Größe ein!";
                                 
                                     else if (weight === "" || isNaN(weight)) 
-                                        result.innerHTML = "Provide a valid Weight!";
+                                        result.innerHTML = "Bitte geben Sie ein Wert für das Gewicht ein!";
                             
                                 
                                 else {
@@ -71,7 +99,7 @@
 
                                     //Bewertung
                                     if (bmi < 18.6) bewertung.innerHTML =
-                                        `Mit Ihrem BMI von <span>${bmi}</span> zählen Sie als untergewichtig. `;
+                                        `Mit Ihrem BMI von <span>${bmi}</span> zählen Sie als untergewichtig.`;
                             
                                     else if (bmi >= 18.6 && bmi < 24.9) 
                                     bewertung.innerHTML = 
@@ -84,13 +112,7 @@
                     </script>
                 </head>
                 <body> 
-                    <div id="auswertung">
-                        <div id="bewertung"></div>
-                            <p>Der BMI ist keine eindeutige Kennzahl über eine qulifizierte Aussage über Über-, Unter- oder Normalgewicht. 
-                                Bitte berücksichtigen Sie dies und lassen Sie Ihr Ergebnis von einem Arzt prüfen.</p>
-                    </div>
-                        <button id="hide">Ausblenden</button>
-                        <button id="show">Anzeigen</button>
+                    
                 </body>
             </html>
 </x-app-layout>
