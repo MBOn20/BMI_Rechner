@@ -24,20 +24,20 @@
                             <p style="font-size: 25px;">Größe:</p>
                             <input type="text" id="height" placeholder="in cm"></br></br>
                             <p style="font-size: 25px;">Gewicht:</p>
-                            <input type="text" id="weight" placeholder="in cm"></br>
-                            <button id="btn" type="button" class="btn btn-danger">Berechnen</button>
-                            </br>
+                            <input type="text" id="weight" placeholder="in cm"></br></br>
+                            <button id="btn" type="button" class="btn btn-warning">Berechnen</button>
+                            </br></br>
                             <div id="result"></div>
                             </br></br>
                             
-                            <h1>Information:</h1>
+                            <h3 class="font-semibold text-xl text-gray-800 leading-tight">Information:</h3>
                             <div id="auswertung"></br>
                                 <div id="bewertung"></div></br>
                                     <p>Der BMI ist keine eindeutige Kennzahl um eine qualifizierte Aussage über Über-, Unter- oder Normalgewicht treffen zu können. 
                                         Bitte berücksichtigen Sie dies und lassen Sie Ihr Ergebnis von einem Arzt prüfen.</p>
                                 </div></br>
-                                <button id="hide">Ausblenden</button>
-                                <button id="show">Anzeigen</button>
+                                <button id="hide" class="btn btn-warning btn-sm">Ausblenden</button>
+                                <button id="show"class="btn btn-warning btn-sm">Anzeigen</button>
                     </div>
                 </div>
             </div>

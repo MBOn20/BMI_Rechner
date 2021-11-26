@@ -4,10 +4,10 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2>Add New Product</h2>
+            <h2 style="font-size: 30px; font-weight: bold; line-height: 36px; margin: 0 0 24px;">Neuer Eintrag:</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('posts.index') }}"> Back</a>
+            <a class="btn btn-warning" href="{{ route('posts.index') }}"> Zurück</a>
         </div>
     </div>
 </div>
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Hinzufügen</button>
+                <button type="submit" class="btn btn-warning">Hinzufügen</button>
         </div>
     </div>
    
