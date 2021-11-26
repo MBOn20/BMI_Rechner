@@ -22,11 +22,12 @@
     <br><br>
     <table class="table table-bordered">
         <tr>
-            <th>Eintragsnummer</th>
-            <th>Lebensmittel</th>
-            <th>Kalorien</th>
-            <th>Gut für:</th>
-            <th>Anmerkungen</th>
+            <th class="bg-info">Eintragsnummer</th>
+            <th class="bg-info">Lebensmittel</th>
+            <th class="bg-info">Kalorien</th>
+            <th class="bg-info">Gut für:</th>
+            <th class="bg-info">Anmerkungen</th>
+            <th class="bg-info"></th>
         </tr>
         @foreach ($data as $key => $value)
         <tr>
@@ -38,7 +39,7 @@
             <td>
             <div class="pull-middle">
                 <form action="{{ route('posts.destroy',$value->id) }}" method="POST">   
-                    <a class="btn btn-success" href="{{ route('posts.show',$value->id) }}">anzeigen</a> </br></br>   
+                    <a class="btn btn-success" href="{{ route('posts.show',$value->id) }}">anzeigen</a>   
                     <a class="btn btn-warning" href="{{ route('posts.edit',$value->id) }}">bearbeiten</a></br></br>   
                     @csrf
                     @method('DELETE')      
